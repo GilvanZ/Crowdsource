@@ -8,11 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors:{
+        'black-color':'var(--black-color)',
+        primary:'var(--primary-color)',
+        secondary:'var(--secondary-color)',
+        "sub-30":'var(--sub-30)',
+        sub: 'var(--sub)',
+        
       },
+      backgroundImage: {
+        'on-code': 'var(--on-code)',
+        'on-code-70': 'var(--on-code-70)',
+
+      },
+      aspectRatio:{
+        'card-image':'420px / 240px',
+      },
+      height:{
+        'screen-navbar':'calc(100vh - 64px)!important'
+      }
     },
   },
   plugins: [],
